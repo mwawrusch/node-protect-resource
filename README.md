@@ -1,4 +1,4 @@
-node-protect-resource
+protect-resource
 ===========================
 
 npm install protect-resource
@@ -6,10 +6,29 @@ npm install protect-resource
 ## About
 Middleware that deals with protection of resources. Supports roles and works transparently with all login vectors.
 
+How to use:
+
+In your main express file:
+
+```coffeescript
+protectResource = require 'protect-resource'
+
+
+#... somewhere after you might have a user
+app.use '/admin',protectResource.protectResourceMiddleware( roles : ['admin'], redirectPath: '/admin')
+app.use protectResource.protectResourceRedirectMiddleware()
+
+# This example protects admin and allows access only to users with admin roles. Leave the roles parameter out if you just want to check for user signed in. Roles must be an array, btw.
+
+```
+
 
 ## Release Notes
 
-### 0.0.1
+### 0.2.2
+* Doc Update
+
+### 0.2.1
 * First version
 
 ## Internal Stuff
