@@ -18,7 +18,9 @@ protectResource = require 'protect-resource'
 app.use '/admin',protectResource.protectResourceMiddleware( roles : ['admin'], redirectPath: '/admin')
 app.use protectResource.protectResourceRedirectMiddleware()
 
-# This example protects admin and allows access only to users with admin roles. Leave the roles parameter out if you just want to check for user signed in. Roles must be an array, btw.
+### 
+This example protects admin and allows access only to users with admin roles. Leave the roles parameter out if you just want to check for user signed in. Roles must be an array, btw.
+###
 
 ```
 
