@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "protect-resource-redirect-middleware.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "protect-resource-redirect-middleware.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;;;;;;;;CAAA;CAAA;CAAA;CAAA,KAAA,2BAAA;;CAAA,CAQA,CAAiB,CAAoC,EAA/C,CAAN,EAAsD,wBAArC;CAEf,CAAA,MAAA;;GAF2D,GAAP;MAEpD;CAAA,CAAA,CAAK,CAAL,KAAM;CACJ,KAAA,IAAA;CAAA,EAAM,CAAH,EAAH;CACE,EAAS,GAAT,CAAqB,CAArB,SAAqB;CAErB,GAAG,EAAH,EAAA;CACE,CAA6B,CAA1B,CAAH,EAAA,IAAA,OAAA;CAAkC,CAAU,IAAR,MAAA;CAAF,CAAuB,EAAvB,IAAa,IAAA;CAA/C,WAAA;CAAA,EAEG,GAAH,EAAA,EAAA;UANJ;QAAA;CAOA,CAAA,WAAA;CARF,IAAK;CAF8C,UAWnD;CAnBF,EAQqD;CARrD"
+}
