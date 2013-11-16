@@ -1,8 +1,8 @@
 ###
-Complimentary module to protectResourceMiddleware that performs redirection on successful log in. Note that this should
-be only added to the primary return point (most likely root)
+Complimentary module to protectResourceMiddleware that performs redirection on successful log in. 
+Placement of this module is important. It requires a current user, so having a session is wise ;-)
 @example
-app.get '/', protectResourceRedir(), ...
+app.use protectResource.protectResourceRedirectMiddleware()
 
 @param {object} opts additional protection options. Unused for now
 ###
@@ -16,5 +16,6 @@ module.exports = protectResourceRedirectMiddleware = (opts = {}) ->
         res.cookie 'post-login-page',null,{ maxAge: 0, httpOnly: true } # Delete the cookie
 
         res.redirect cookie
+        return #IMPORTANT - don't loose that one.
     cb()
   fn
